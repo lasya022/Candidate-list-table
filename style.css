@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+.table-container {
+    margin-top: 36px;
+    border: 2px solid;
+    border-radius: 12px;
+    max-width: 95%;
+    overflow: scroll;
+}
+.table{
+    width: 130%;
+}
+.user-table{
+    width: 2000px !important;
+}
+.user-id{
+    width: 200px;
+}
+.Interview-schedule{
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+text-align: center;
+color: #FF7070;
+}
+.round-details{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 0px;
+}
+.user-table-row:hover {
+    background: rgba(234, 234, 234, 0.4);
+}
+.user-table-heading {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+.user-table-row {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+}
+.content-container {
+    width: 1272px;
+    gap: 247px;
+    height: 73px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    border: 1px solid;
+}
+.Progress-Title{
+    margin-left: 12px;
+}
+.clear-selection-group{
+    margin-right: 12px;
+    height: 19px;
+}
+.Select-Action-btn{
+    box-sizing: border-box;
+width: 176px;
+height: 38px;
+color: #FFFFFF;
+background: #000000;
+border: 1px solid rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+.Image-btn{
+width: 66px;
+height: 38px;
+background: #66D7D1;
+border-radius: 4px;
+}
+.rejected-btn{  
+background: #FF947F;
+border-radius: 6px;
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+width: 80px;
+height: 35px;
+border: none;
+color: #A72208;
+}
+.shortlist-btn{
+ width: 95px;
+height: 35px;
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+color: #128A73;
+background: #ABEFE2;
+border-radius: 6px;
+border: none;
+}
+.waiting-btn{
+    width: 88px;
+height: 35px;
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+color: #837915;
+background: #FFF8AF;
+border-radius: 6px;
+border: none;
+}
+.dropdown-item{
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+
+color: #000000;
+}

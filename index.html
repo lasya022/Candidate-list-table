@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content-container d-flex align-items-center">
+      <div class="content d-flex" style="gap: 24px">
+        <div>
+          <h6>Business and Sales Development</h6>
+        </div>
+        <div>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          <label for="vehicle1"> Select All</label>
+        </div>
+      </div>
+
+      <div>
+        <!-- Filter -->
+        <div class="dropdown">
+          <button
+            class="btn"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bi bi-filter"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="Progress-Title">
+              <h6>Applicants Progress</h6>
+            </div>
+
+            <a class="dropdown-item" href="#">
+              <input type="radio" id="html" name="fav_language" value="HTML" />
+              <label for="html">Shortlisted</label>
+            </a>
+            <a class="dropdown-item" href="#">
+              <input type="radio" id="html" name="fav_language" value="HTML" />
+              <label for="html">Waitlisted</label>
+            </a>
+            <a class="dropdown-item" href="#">
+              <input type="radio" id="html" name="fav_language" value="HTML" />
+              <label for="html">Rejected</label>
+            </a>
+            <a class="dropdown-item" href="#">
+              <input type="radio" id="html" name="fav_language" value="HTML" />
+              <label for="html">Interview Scheduled</label>
+            </a>
+            <a class="dropdown-item" href="#">
+              <input type="radio" id="html" name="fav_language" value="HTML" />
+              <label for="html">Candidate Hired</label>
+            </a>
+            <hr />
+            <div class="clear-selection-group d-flex justify-content-end align-items-center">
+              <p><img src="./Images/X.png" alt="" /> Clear Selection</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+
+    <div class="table-container">
+      <table class="table table-borderless user-table">
+        <tr class="user-table-heading">
+          <th class="user-id">Application ID</th>
+          <th class="user-name">Name</th>
+          <th class="user-phone">Phone</th>
+          <th class="user-email">Email</th>
+          <th class="user-utm-source">Applied on</th>
+          <th class="user-utm-medium">Cv Accepted</th>
+          <th class="user-utm-campaign">PAP Signed</th>
+          <th class="user-create">Interview Scheduled</th>
+          <th class="user-update"> 
+            <div class="dropdown ">
+              <button
+                class="btn round-details dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+               Ongoing Round
+              </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">
+                <input type="radio" id="html" name="fav_language" value="HTML" />
+                <label for="html">Round1</label>
+              </a>
+              <a class="dropdown-item" href="#">
+                <input type="radio" id="html" name="fav_language" value="HTML" />
+                <label for="html">Round2</label>
+              </a>
+              <a class="dropdown-item" href="#">
+                <input type="radio" id="html" name="fav_language" value="HTML" />
+                <label for="html">Round3</label>
+              </a>
+              <a class="dropdown-item" href="#">
+                <input type="radio" id="html" name="fav_language" value="HTML" />
+                <label for="html">Round4</label>
+              </a>
+          </th>
+          <th class="user-actions">Status</th>
+          <th class="user-actions">Other Options</th>
+        </tr>
+        <tr class="user-table-row">
+          <td>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          <label for="vehicle1"> XYZ123456ABC</label>
+          </td>
+          <td>Alyson Hanger</td>
+          <td>+91 1234567894</td>
+          <td>alysonhanger12@gmail.com</td>
+          <td>21/03/2023</td>
+          <td>Accepted</td>
+          <td>Signed</td>
+          <td class="Interview-schedule">Interview Scheduled on <br>
+16/03/2023 at 10:00 A.M.</td>
+          <td>Round1</td>
+          <td>
+            <button class="shortlist-btn">Shortlisted</button>
+          </td>
+          <td>
+            <div class="dropdown">
+              <button type="button" class="btn" data-toggle="dropdown">
+                <i class="bi bi-three-dots-vertical"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Shortlist Candidates</a>
+                <a class="dropdown-item" href="#">Waitlist Candidates</a>
+                <a class="dropdown-item" href="#">Reject Candidates</a>
+                <a class="dropdown-item" href="#">Move to Next Round</a>
+                <a class="dropdown-item" href="#">Hire Candidate</a>
+                <a class="dropdown-item" href="#">Accept Cv</a>
+                <a class="dropdown-item" href="#">Sign PAP</a>
+                <a class="dropdown-item" href="#">View Applicant</a>
+                <a class="dropdown-item" href="#">Details</a>
+              </div>
+            </div>
+            
+          </td>
+        </tr>
+        <tr class="user-table-row">
+            <td>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+              <label for="vehicle1"> XYZ123456ABC</label>
+              </td>
+          <td>Alyson Hanger</td>
+          <td>+91 1234567894</td>
+          <td>alysonhanger12@gmail.com</td>
+          <td>21/03/2023</td>
+          <td>Accepted</td>
+          <td>Signed</td>
+          <td class="Interview-schedule">Interview Scheduled on <br>
+            16/03/2023 at 10:00 A.M.</td>
+          <td>Round1</td>
+          
+            <td>
+              <button class="waiting-btn">Waiting</button>
+            </td>
+            <td>
+              <div class="dropdown">
+                <button type="button" class="btn" data-toggle="dropdown">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Shortlist Candidates</a>
+                  <a class="dropdown-item" href="#">Waitlist Candidates</a>
+                  <a class="dropdown-item" href="#">Reject Candidates</a>
+                  <a class="dropdown-item" href="#">Move to Next Round</a>
+                  <a class="dropdown-item" href="#">Hire Candidate</a>
+                  <a class="dropdown-item" href="#">Accept Cv</a>
+                  <a class="dropdown-item" href="#">Sign PAP</a>
+                  <a class="dropdown-item" href="#">View Applicant</a>
+                  <a class="dropdown-item" href="#">Details</a>
+                </div>
+              </div>
+              
+            </td>
+          
+        </tr>
+
+        <tr class="user-table-row">
+            <td>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+              <label for="vehicle1"> XYZ123456ABC</label>
+              </td>
+          <td>Alyson Hanger</td>
+          <td>+91 1234567894</td>
+          <td>alysonhanger12@gmail.com</td>
+          <td>21/03/2023</td>
+          <td>Accepted</td>
+          <td>Signed</td>
+          <td class="Interview-schedule">Interview Scheduled on <br>
+            16/03/2023 at 10:00 A.M.</td>
+          <td>Round1</td>
+          
+           <td>
+            <button class="rejected-btn">Rejected</button>
+          
+          </td>
+          <td>
+            <div class="dropdown">
+              <button type="button" class="btn" data-toggle="dropdown">
+                <i class="bi bi-three-dots-vertical"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Shortlist Candidates</a>
+                <a class="dropdown-item" href="#">Waitlist Candidates</a>
+                <a class="dropdown-item" href="#">Reject Candidates</a>
+                <a class="dropdown-item" href="#">Move to Next Round</a>
+                <a class="dropdown-item" href="#">Hire Candidate</a>
+                <a class="dropdown-item" href="#">Accept Cv</a>
+                <a class="dropdown-item" href="#">Sign PAP</a>
+                <a class="dropdown-item" href="#">View Applicant</a>
+                <a class="dropdown-item" href="#">Details</a>
+              </div>
+            </div>
+            
+          </td>
+        </tr>
+
+        <tr class="user-table-row">
+            <td>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+              <label for="vehicle1"> XYZ123456ABC</label>
+              </td>
+          <td>Alyson Hanger</td>
+          <td>+91 1234567894</td>
+          <td>alysonhanger12@gmail.com</td>
+          <td>21/03/2023</td>
+          <td>Accepted</td>
+          <td>Signed</td>
+          <td class="Interview-schedule">Interview Scheduled on <br>
+            16/03/2023 at 10:00 A.M.</td>
+          <td>Round1</td>
+          <td >
+            <button class="shortlist-btn">Shortlisted</button>
+          </td>
+          <td>
+            <div class="dropdown">
+              <button type="button" class="btn" data-toggle="dropdown">
+                <i class="bi bi-three-dots-vertical"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Shortlist Candidates</a>
+                <a class="dropdown-item" href="#">Waitlist Candidates</a>
+                <a class="dropdown-item" href="#">Reject Candidates</a>
+                <a class="dropdown-item" href="#">Move to Next Round</a>
+                <a class="dropdown-item" href="#">Hire Candidate</a>
+                <a class="dropdown-item" href="#">Accept Cv</a>
+                <a class="dropdown-item" href="#">Sign PAP</a>
+                <a class="dropdown-item" href="#">View Applicant</a>
+                <a class="dropdown-item" href="#">Details</a>
+              </div>
+            </div>
+            
+          </td>
+        </tr>
+        <tr class="user-table-row">
+            <td>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+              <label for="vehicle1"> XYZ123456ABC</label>
+              </td>
+          <td>Alyson Hanger</td>
+          <td>+91 1234567894</td>
+          <td>alysonhanger12@gmail.com</td>
+          <td>21/03/2023</td>
+          <td>Accepted</td>
+          <td>Signed</td>
+          <td class="Interview-schedule">Interview Scheduled on <br>
+            16/03/2023 at 10:00 A.M.</td>
+          <td>Round1</td>
+          <td >
+            <button class="waiting-btn">Waiting</button>
+          </td>
+          <td>
+            <div class="dropdown">
+              <button type="button" class="btn" data-toggle="dropdown">
+                <i class="bi bi-three-dots-vertical"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Shortlist Candidates</a>
+                <a class="dropdown-item" href="#">Waitlist Candidates</a>
+                <a class="dropdown-item" href="#">Reject Candidates</a>
+                <a class="dropdown-item" href="#">Move to Next Round</a>
+                <a class="dropdown-item" href="#">Hire Candidate</a>
+                <a class="dropdown-item" href="#">Accept Cv</a>
+                <a class="dropdown-item" href="#">Sign PAP</a>
+                <a class="dropdown-item" href="#">View Applicant</a>
+                <a class="dropdown-item" href="#">Details</a>
+              </div>
+            </div>
+            
+          </td>
+        </tr>
+        <tr class="user-table-row">
+            <td>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+              <label for="vehicle1"> XYZ123456ABC</label>
+              </td>
+          <td>Alyson Hanger</td>
+          <td>+91 1234567894</td>
+          <td>alysonhanger12@gmail.com</td>
+          <td>21/03/2023</td>
+          <td>Accepted</td>
+          <td>Signed</td>
+          <td class="Interview-schedule">Interview Scheduled on <br>
+            16/03/2023 at 10:00 A.M.</td>
+          <td>Round1</td>
+          <td >
+            <button class="rejected-btn">Rejected</button>
+          </td>
+          <td>
+            <div class="dropdown">
+              <button type="button" class="btn" data-toggle="dropdown">
+                <i class="bi bi-three-dots-vertical"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Shortlist Candidates</a>
+                <a class="dropdown-item" href="#">Waitlist Candidates</a>
+                <a class="dropdown-item" href="#">Reject Candidates</a>
+                <a class="dropdown-item" href="#">Move to Next Round</a>
+                <a class="dropdown-item" href="#">Hire Candidate</a>
+                <a class="dropdown-item" href="#">Accept Cv</a>
+                <a class="dropdown-item" href="#">Sign PAP</a>
+                <a class="dropdown-item" href="#">View Applicant</a>
+                <a class="dropdown-item" href="#">Details</a>
+              </div>
+            </div>
+            
+          </td>
+        </tr>
+        <tr class="user-table-row">
+            <td>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+              <label for="vehicle1"> XYZ123456ABC</label>
+              </td>
+          <td>Alyson Hanger</td>
+          <td>+91 1234567894</td>
+          <td>alysonhanger12@gmail.com</td>
+          <td>21/03/2023</td>
+          <td>Accepted</td>
+          <td>Signed</td>
+          <td class="Interview-schedule">Interview Scheduled on <br>
+            16/03/2023 at 10:00 A.M.</td>
+          <td>Round1</td>
+          <td >
+            <button class="shortlist-btn">Shortlisted</button>
+          </td>
+          <td>
+            <div class="dropdown">
+              <button type="button" class="btn" data-toggle="dropdown">
+                <i class="bi bi-three-dots-vertical"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Shortlist Candidates</a>
+                <a class="dropdown-item" href="#">Waitlist Candidates</a>
+                <a class="dropdown-item" href="#">Reject Candidates</a>
+                <a class="dropdown-item" href="#">Move to Next Round</a>
+                <a class="dropdown-item" href="#">Hire Candidate</a>
+                <a class="dropdown-item" href="#">Accept Cv</a>
+                <a class="dropdown-item" href="#">Sign PAP</a>
+                <a class="dropdown-item" href="#">View Applicant</a>
+                <a class="dropdown-item" href="#">Details</a>
+              </div>
+            </div>
+            
+          </td>
+        </tr>
+        <tr class="user-table-row">
+            <td>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+              <label for="vehicle1"> XYZ123456ABC</label>
+              </td>
+          <td>Alyson Hanger</td>
+          <td>+91 1234567894</td>
+          <td>alysonhanger12@gmail.com</td>
+          <td>21/03/2023</td>
+          <td>Accepted</td>
+          <td>Signed</td>
+          <td class="Interview-schedule">Interview Scheduled on <br>
+            16/03/2023 at 10:00 A.M.</td>
+          <td>Round1</td>
+          <td >
+            <button class="waiting-btn">Waiting</button>
+          </td>
+          <td>
+            <div class="dropdown">
+              <button type="button" class="btn" data-toggle="dropdown">
+                <i class="bi bi-three-dots-vertical"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Shortlist Candidates</a>
+                <a class="dropdown-item" href="#">Waitlist Candidates</a>
+                <a class="dropdown-item" href="#">Reject Candidates</a>
+                <a class="dropdown-item" href="#">Move to Next Round</a>
+                <a class="dropdown-item" href="#">Hire Candidate</a>
+                <a class="dropdown-item" href="#">Accept Cv</a>
+                <a class="dropdown-item" href="#">Sign PAP</a>
+                <a class="dropdown-item" href="#">View Applicant</a>
+                <a class="dropdown-item" href="#">Details</a>
+              </div>
+            </div>
+            
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
